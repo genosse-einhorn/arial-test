@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset=UTF-8>
+<title>Font Size Comparison</title>
+<style>
+th { text-align: left }
+#demo_a, #demo_b { padding: 16px; border: thin solid; display: inline-block; margin: 16px; }
+body, html { margin: 0; padding: 0; }
+body > * { padding: 16px; }
+h1 { background-color: black; color: white; }
+</style>
+
+<h1>First Font</h1>
+<form>
+    <label>Font: <input type=text id=font_a value="Arial" /></label>
+    <label>Size: <input type=number id=size_a value=24 />pt</label>
+</form>
+
+
+<div id=demo_a>
+AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+</div>
+<div id=results_a></div>
+
+<h1>Second Font</h1>
+<form>
+    <label>Font: <input type=text id=font_b value="Calibri" /></label>
+    <label>Size: <input type=number id=size_b value=24 />pt</label>
+</form>
+
+
+<div id=demo_b>
+AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+</div>
+<div id=results_b></div>
+
+
+<script src="canvas-text-metrics-polyfill.js"></script>
+<script src="arialtest.js"></script>
+
+<canvas width=1000 height=200></canvas>
